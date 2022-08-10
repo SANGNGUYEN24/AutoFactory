@@ -1,4 +1,6 @@
-package com.jintin.autofactory;
+package com.jintin.autofactory.animal;
+
+import com.jintin.autofactory.AutoElement;
 
 @AutoElement(AnimalTags.CAT)
 public class Cat implements Animal {

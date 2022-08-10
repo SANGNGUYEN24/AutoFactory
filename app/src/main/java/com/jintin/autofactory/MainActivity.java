@@ -6,6 +6,10 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 
+import com.jintin.autofactory.animal.Animal;
+import com.jintin.autofactory.animal.AnimalFactory;
+import com.jintin.autofactory.animal.AnimalTags;
+
 public class MainActivity extends Activity {
 
     @Override
@@ -13,7 +17,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Animal dog = AnimalFactory.createAnimal(AnimalTags.CAT);
+        Animal cat = AnimalFactory.createAnimal(AnimalTags.CAT);
+        Animal dog = AnimalFactory.createAnimal(AnimalTags.DOG);
 
         TextView label = findViewById(R.id.label);
         label.setText(dog.bark());
